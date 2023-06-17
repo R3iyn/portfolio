@@ -5,7 +5,29 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects at ZORGI</div>
+    <div class="text-3xl w-full font-bold mb-5">Personal projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Coming soon"
+    img="/itemPreview.png"
+    desc="Coming soon"
+    url="https://play.google.com/store/apps/details?id=eu.mobitrace.nurseflow"
+    badges={Array.of("In development")}
+    tags={Array.of("Java 21", "Spring Boot 3", "Docker", "Terraform", "MariaDB")}
+  />
+
+  <HorizontalCard
+    title="Portfolio"
+    img="/portfolio.png"
+    desc="Personal portfolio (you're looking at it)"
+    url="bponcelet.dev"
+    badges={Array.of("Maintaining")}
+    tags={Array.of("Typescript", "JavaScript", "Astro", "GitHub Actions", "Netlify")}
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects at ZORGI</div>
   </div>
 
   <HorizontalCard
@@ -13,7 +35,8 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     img="/nurseflow.png"
     desc="B2B App for hospitals to help nurses with medication, sampling, blood transfusion, vital signs and more"
     url="https://play.google.com/store/apps/details?id=eu.mobitrace.nurseflow"
-    badges={Array.of("Java 20", "Spring Boot 3", "Docker")}
+    badges={Array.of("Re-architecturing for Cloud")}
+    tags={Array.of("Java 20", "Spring Boot 3", "MariaDB", "Docker")}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
@@ -21,7 +44,8 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     img="/logistics.png"
     desc="B2B App for hospitals to help with inventory scanning"
     url="https://play.google.com/store/apps/details?id=be.zorgi.mobile.logistics"
-    badges={Array.of("Java 17", "Spring Boot 3", "Docker", "Azure")}
+    tags={Array.of("Java 17", "Spring Boot 3", "Docker", "Azure", "Azure Table Storage")}
+    badges={Array.of("Maintenance & Bugfixing")}
   />
 
   <div>
@@ -33,28 +57,28 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     img="/basiq_dental.jpg"
     desc="Implementation of a new B2B webshop for Basiq Dental"
     url="https://www.basiqdental.be"
-    badges={Array.of("Java 8", "SAP Commerce", "Azure")}
+    tags={Array.of("Java 8", "SAP Commerce", "Azure")}
   />
 <HorizontalCard
     title="MCB"
     img="/mcb.jpg"
     desc="Continuous implementation and upgrades for the existing MCB webshop"
     url="https://www.mcb.eu/nl/"
-    badges={Array.of("Java 8", "SAP Commerce", "AWS")}
+    tags={Array.of("Java 8", "SAP Commerce", "AWS")}
   />
 <HorizontalCard
     title="Medicare Market"
     img="/medicare_market.jpg"
     desc="Overhaul and upgrade of an existing PIM system"
     url="https://medi-market.be"
-    badges={Array.of("Java 8", "SAP Commerce")}
+    tags={Array.of("Java 8", "SAP Commerce")}
   />
   <HorizontalCard
     title="Maiburg"
     img="/maiburg.jpg"
     desc="Implementation of a B2B webshop for Maiburg"
     url="https://www.maiburg.nl"
-    badges={Array.of("Java 8", "SAP Commerce")}
+    tags={Array.of("Java 8", "SAP Commerce")}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
@@ -62,7 +86,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     img="/nmc.jpg"
     desc="Implementation of a brand new PIM system for NMC"
     url="https://nmc.eu/en/"
-    badges={Array.of("Java 8", "SAP Commerce")}
+    tags={Array.of("Java 8", "SAP Commerce")}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
@@ -70,7 +94,6 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     img="/signify.jpg"
     desc="DevOps engineer for the existing Signify MyLighting portal"
     url="https://www.signify.com/en-nz/mylighting"
-    badges={Array.of("Java 8", "SAP Commerce", "Jenkins")}
-  
+    tags={Array.of("Java 8", "SAP Commerce", "Jenkins")}
   />
 </BaseLayout>

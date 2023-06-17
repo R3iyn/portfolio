@@ -26,33 +26,110 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">My latest projects {"</>"}</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="Portfolio"
+    img="/portfolio.png"
+    desc="Personal portfolio (you're looking at it)"
+    url="bponcelet.dev"
+    badges={Array.of("Maintaining")}
+    tags={Array.of("Typescript", "JavaScript", "Astro", "GitHub Actions", "Netlify")}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Nurseflow"
+    img="/nurseflow.png"
+    desc="B2B App for hospitals to help nurses with medication, sampling, blood transfusion, vital signs and more"
+    url="https://play.google.com/store/apps/details?id=eu.mobitrace.nurseflow"
+    badges={Array.of("Re-architecturing for Cloud")}
+    tags={Array.of("Java 20", "Spring Boot 3", "MariaDB", "Docker")}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="ZORGI Logistics"
+    img="/logistics.png"
+    desc="B2B App for hospitals to help with inventory scanning"
+    url="https://play.google.com/store/apps/details?id=be.zorgi.mobile.logistics"
+    tags={Array.of("Java 17", "Spring Boot 3", "Docker", "Azure", "Azure Table Storage")}
+    badges={Array.of("Maintenance & Bugfixing")}
   />
 
   <div>
+    <div class="text-3xl w-full font-bold mb-2 mt-10">A grasp of my favourite technologies and tools {"</>"}</div>
+  </div>
+
+  <div class="pb-12 mt-5">
+    <div class="-m-1 flex flex-wrap md:-m-2">
+      <div class="flex w-1/4 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-full w-full rounded-lg object-contain object-center"
+            src="/java.png" />
+        </div>
+      </div>
+      <div class="flex w-1/4 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-full w-full rounded-lg object-contain object-center"
+            src="/spring.png" />
+        </div>
+      </div>
+      <div class="flex w-1/4 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-full w-full rounded-lg object-contain object-center"
+            src="/hibernate.png" />
+        </div>
+      </div>
+      <div class="flex w-1/4 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-full w-full rounded-lg object-contain object-center"
+            src="/mariadb.png" />
+        </div>
+      </div>
+      <div class="flex w-1/4 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-full w-full rounded-lg object-contain object-center"
+            src="/docker.png" />
+        </div>
+      </div>
+      <div class="flex w-1/4 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-full w-full rounded-lg object-contain object-center"
+            src="/terraform.png" />
+        </div>
+      </div>
+      <div class="flex w-1/4 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-full w-full rounded-lg object-contain object-center"
+            src="/git.png" />
+        </div>
+      </div>
+      <div class="flex w-1/4 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-full w-full rounded-lg object-contain object-center"
+            src="/golang.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
   </div>
 
@@ -70,5 +147,5 @@ const last_posts = posts.slice(0, 3);
         <div class="divider my-0" />
       </>
     ))
-  }
+  } -->
 </BaseLayout>
