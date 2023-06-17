@@ -5,47 +5,72 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Projects at ZORGI</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="Nurseflow"
+    img="/nurseflow.png"
+    desc="B2B App for hospitals to help nurses with medication, sampling, blood transfusion, vital signs and more"
+    url="https://play.google.com/store/apps/details?id=eu.mobitrace.nurseflow"
+    badges={Array.of("Java 20", "Spring Boot 3", "Docker")}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="ZORGI Logistics"
+    img="/logistics.png"
+    desc="B2B App for hospitals to help with inventory scanning"
+    url="https://play.google.com/store/apps/details?id=be.zorgi.mobile.logistics"
+    badges={Array.of("Java 17", "Spring Boot 3", "Docker", "Azure")}
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">E-commerce projects I contributed to</div>
   </div>
 
+<HorizontalCard
+    title="Basiq Dental"
+    img="/basiq_dental.jpg"
+    desc="Implementation of a new B2B webshop for Basiq Dental"
+    url="https://www.basiqdental.be"
+    badges={Array.of("Java 8", "SAP Commerce", "Azure")}
+  />
+<HorizontalCard
+    title="MCB"
+    img="/mcb.jpg"
+    desc="Continuous implementation and upgrades for the existing MCB webshop"
+    url="https://www.mcb.eu/nl/"
+    badges={Array.of("Java 8", "SAP Commerce", "AWS")}
+  />
+<HorizontalCard
+    title="Medicare Market"
+    img="/medicare_market.jpg"
+    desc="Overhaul and upgrade of an existing PIM system"
+    url="https://medi-market.be"
+    badges={Array.of("Java 8", "SAP Commerce")}
+  />
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="Maiburg"
+    img="/maiburg.jpg"
+    desc="Implementation of a B2B webshop for Maiburg"
+    url="https://www.maiburg.nl"
+    badges={Array.of("Java 8", "SAP Commerce")}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="NMC"
+    img="/nmc.jpg"
+    desc="Implementation of a brand new PIM system for NMC"
+    url="https://nmc.eu/en/"
+    badges={Array.of("Java 8", "SAP Commerce")}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Signify MyLighting"
+    img="/signify.jpg"
+    desc="DevOps engineer for the existing Signify MyLighting portal"
+    url="https://www.signify.com/en-nz/mylighting"
+    badges={Array.of("Java 8", "SAP Commerce", "Jenkins")}
+  
   />
 </BaseLayout>
