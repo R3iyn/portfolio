@@ -10,8 +10,8 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">My name is Brian Poncelet</div>
+    <div class="text-xl py-1">Hey there 👋</div></br>
+    <div class="text-5xl font-bold">My name is Brian Poncelet</div></br>
     <div class="py-2">
       <text class="text-lg">
         I'm a <b><u>Freelance</u></b> <b>Backend Architect, Developer</b> and <b>Technical Lead</b> based near Tongeren, Limburg, Belgium. <br>
@@ -29,13 +29,31 @@ const last_posts = posts.slice(0, 3);
     <div class="text-3xl w-full font-bold mb-2">My latest projects {"</>"}</div>
   </div>
 
+ <HorizontalCard
+    title="Company Website"
+    img="/shiftr.png"
+    desc="My company's website"
+    url="https://shift-r.be"
+    badges={Array.of("Maintaining")}
+    tags={Array.of("Typescript", "JavaScript", "Astro", "GitHub Actions", "Netlify")}
+  />
+  <div class="divider my-0"></div>
   <HorizontalCard
     title="Portfolio"
     img="/portfolio.png"
     desc="Personal portfolio (you're looking at it)"
-    url="https://brianponcelet.netlify.app"
+    url="https://brianponcelet.be"
     badges={Array.of("Maintaining")}
     tags={Array.of("Typescript", "JavaScript", "Astro", "GitHub Actions", "Netlify")}
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="xFlow"
+    img="/nurseflow.png"
+    desc="Revamp of the original NurseFlow app, now integrated with Xperthis Care, an EPD system by ZORGI"
+    url="https://play.google.com/store/apps/details?id=eu.mobitrace.nurseflow"
+    badges={Array.of("Work in progress")}
+    tags={Array.of("Java 23", "Spring Boot 3", "MariaDB", "Docker", "Spring Cloud")}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
@@ -43,8 +61,8 @@ const last_posts = posts.slice(0, 3);
     img="/nurseflow.png"
     desc="B2B App for hospitals to help nurses with medication, sampling, blood transfusion, vital signs and more"
     url="https://play.google.com/store/apps/details?id=eu.mobitrace.nurseflow"
-    badges={Array.of("Re-architecturing for Cloud")}
-    tags={Array.of("Java 21", "Spring Boot 3", "MariaDB", "Docker")}
+    badges={Array.of("Maintenance & bugfixing")}
+    tags={Array.of("Java 8", "Spring 2", "MariaDB")}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
